@@ -24,7 +24,7 @@ class ChargeController extends Controller
     public function create(Request $request)
     {
 
-        dd($request->stripeToken);
+        dd($request);
 
         return redirect('/');
     }

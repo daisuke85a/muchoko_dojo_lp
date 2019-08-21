@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
         /**
 * The CSS shown here will not be introduced in the Quickstart guide, but shows
@@ -45,19 +46,28 @@
 
 <body>
     <form action="/stripe" method="post" id="payment-form">
-        <div class="form-row">
+        <div class="container py-4">
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="例：むちょこ">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Eメールアドレス</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="例：muchoko@example.com">
+            </div>
             <label for="card-element">
-                Credit or debit card
+                クレジットカード番号
             </label>
-            <div id="card-element">
+            <div id="card-element" class="form-group">
                 <!-- A Stripe Element will be inserted here. -->
             </div>
 
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
-        </div>
 
-        <button>Submit Payment</button>
+            <button class="btn btn-primary">決済する</button>
+        </div>
     </form>
 
     <script>
@@ -107,7 +117,6 @@
         var form = document.getElementById('payment-form');
         form.addEventListener('submit', function (event) {
             event.preventDefault();
-
             stripe.createToken(card).then(function (result) {
                 if (result.error) {
                     // Inform the user if there was an error.
