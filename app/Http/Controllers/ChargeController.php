@@ -28,6 +28,7 @@ class ChargeController extends Controller
 
         $token = $request->stripeToken;
 
+        //TODO: 例外処理
         $customer = \Stripe\Customer::create([
             "description" => "むちょこ道場",
             "source" => $token,
@@ -35,6 +36,7 @@ class ChargeController extends Controller
             'name' => $request->name,
         ]);
 
+        //TODO: 例外処理
         $charge = \Stripe\Charge::create([
             'customer' => $customer->id,
             'amount' => 50000,
