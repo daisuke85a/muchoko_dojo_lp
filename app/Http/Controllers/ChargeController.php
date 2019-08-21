@@ -44,6 +44,9 @@ class ChargeController extends Controller
             'description' => 'むちょこ道場',
         ]);
 
+        //TODO: 成功したら決済成功画面を表示する
+        //TODO: 失敗したら決済失敗画面を表示する
+
         return redirect('/');
     }
 
