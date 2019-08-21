@@ -16,4 +16,15 @@ Route::get('/', function () {
 });
 
 Route::post('/stripe', 'ChargeController@create');
-Route::get('/credit', 'ChargeController@inputCredit');
+
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+
+Route::get('/success', function () {
+    return view('success');
+});
+
+Route::get('/canceled', function () {
+    return view('canceled');
+});
