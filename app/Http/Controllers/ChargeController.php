@@ -24,7 +24,23 @@ class ChargeController extends Controller
     public function create(Request $request)
     {
 
-        dd($request);
+        \Stripe\Stripe::setApiKey('sk_test_Odr1M8wgSlxOhJ3syVhIl8Vn00VcuUOfvu');
+
+        $token = $request->stripeToken;
+
+        $customer = \Stripe\Customer::create([
+            "description" => "むちょこ道場",
+            "source" => $token,
+            'email' => $request->email,
+            'name' => $request->name,
+        ]);
+
+        $charge = \Stripe\Charge::create([
+            'customer' => $customer->id,
+            'amount' => 50000,
+            'currency' => 'jpy',
+            'description' => 'むちょこ道場',
+        ]);
 
         return redirect('/');
     }
