@@ -218,11 +218,11 @@
             z-index: 33;
         }
 
-        .apply p span {
+        .apply-description span {
             font-size: 70px;
         }
 
-        .apply a {
+        .apply-button {
             background-image: url("{{ asset('image/button_apply.png') }}");
             /* border-radius: 35px; */
             background-size: auto auto;
@@ -242,7 +242,7 @@
             text-decoration: none;
         }
 
-        .apply a p {
+        .apply-button p {
             font-size: 35px;
             font-family: "MS Gothic";
             color: rgb(255, 255, 255);
@@ -252,21 +252,6 @@
             -webkit-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             -ms-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
         }
-
-        /* .apply .apply-button a {
-            font-size: 35px;
-            font-family: "MS Gothic";
-            color: rgb(255, 255, 255);
-            line-height: 1.2;
-            text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
-            -moz-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
-            -webkit-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
-            -ms-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
-            display: block;
-            align-self: center;
-            text-decoration: none;
-            z-index: 99;
-        } */
 
         footer {
             background-image: url("{{ asset('image/footer.png') }}");
@@ -314,13 +299,10 @@
         <p class="apply-description">費用は、<span>50,000円</span>です。<br />
             お申し込みの方は、こちらから<br />決済にお進みください</p>
 
-        <a href="/apply">
+        <a class="apply-button" href="/apply">
             <p>お申込み</p>
         </a>
 
-        {{-- <div class="apply-button">
-            <a href="/apply">お申込み</a>
-        </div> --}}
         {{-- <a href="">お問い合わせ<img src="" alt=""></a> --}}
     </div>
 
