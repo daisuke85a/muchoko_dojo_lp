@@ -204,7 +204,7 @@
             z-index: 34;
         }
 
-        .apply p {
+        .apply-description {
             font-size: 35px;
             font-family: "MS Gothic";
             color: rgb(0, 0, 0);
@@ -222,9 +222,9 @@
             font-size: 70px;
         }
 
-        .apply .apply-button {
+        .apply a {
             background-image: url("{{ asset('image/button_apply.png') }}");
-            border-radius: 35px;
+            /* border-radius: 35px; */
             background-size: auto auto;
             /* background-color: rgb(103, 212, 231); */
             position: absolute;
@@ -234,11 +234,26 @@
             height: 127px;
             display: flex;
             justify-content: center;
-            /* z-index: 29; */
+            align-items: center;
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            text-decoration: none;
         }
 
-        .apply .apply-button a {
-            /* background-image: url("{{ asset('image/button_apply.png') }}"); */
+        .apply a p {
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+            -moz-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
+            -webkit-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
+            -ms-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
+        }
+
+        /* .apply .apply-button a {
             font-size: 35px;
             font-family: "MS Gothic";
             color: rgb(255, 255, 255);
@@ -250,11 +265,8 @@
             display: block;
             align-self: center;
             text-decoration: none;
-            /* position: absolute; */
-            /* left: 640.141px; */
-            /* top: 2654.335px; */
             z-index: 99;
-        }
+        } */
 
         footer {
             background-image: url("{{ asset('image/footer.png') }}");
@@ -299,12 +311,17 @@
     </div>
     <div class="apply">
         <h2>お申し込み</h2>
-        <p>費用は、<span>50,000円</span>です。<br />
+        <p class="apply-description">費用は、<span>50,000円</span>です。<br />
             お申し込みの方は、こちらから<br />決済にお進みください</p>
-        <div class="apply-button">
+
+        <a href="/apply">
+            <p>お申込み</p>
+        </a>
+
+        {{-- <div class="apply-button">
             <a href="/apply">お申込み</a>
-        </div>
-        <a href="">お問い合わせ<img src="" alt=""></a>
+        </div> --}}
+        {{-- <a href="">お問い合わせ<img src="" alt=""></a> --}}
     </div>
 
     </div>
