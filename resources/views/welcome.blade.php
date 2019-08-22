@@ -190,6 +190,38 @@
             height: 1137px;
         }
 
+        .apply h2 {
+            font-size: 29.266px;
+            font-family: "MS Gothic";
+            color: rgb(0, 0, 0);
+            line-height: 1.2;
+            -moz-transform: matrix(2.26291468657062, 5.76741728279482e-16, 0, 2.22098386879125, 0, 0);
+            -webkit-transform: matrix(2.26291468657062, 5.76741728279482e-16, 0, 2.22098386879125, 0, 0);
+            -ms-transform: matrix(2.26291468657062, 5.76741728279482e-16, 0, 2.22098386879125, 0, 0);
+            position: absolute;
+            left: 442.177px;
+            top: 2174.144px;
+            z-index: 34;
+        }
+
+        .apply p {
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(0, 0, 0);
+            line-height: 1.55;
+            -moz-transform: matrix(1.35457112857232, 0, 0, 1.35457112857231, 0, 0);
+            -webkit-transform: matrix(1.35457112857232, 0, 0, 1.35457112857231, 0, 0);
+            -ms-transform: matrix(1.35457112857232, 0, 0, 1.35457112857231, 0, 0);
+            position: absolute;
+            left: 440.811px;
+            top: 2335.52px;
+            z-index: 33;
+        }
+
+        .apply p span {
+            font-size: 70px;
+        }
+
         footer {
             background-image: url("{{ asset('image/footer.png') }}");
             width: 1000px;
@@ -234,8 +266,8 @@
     <div class="apply">
         <h2>お申し込み</h2>
         <div>
-            <p>費用は、<span>50,000円</span>です。</p>
-            <p>お申し込みの方は、こちらから<br />決済にお進みください</p>
+            <p>費用は、<span>50,000円</span>です。<br />
+                お申し込みの方は、こちらから<br />決済にお進みください</p>
             <div>
                 <a href="/apply"><img src="" alt="">お申込み</a>
             </div>
