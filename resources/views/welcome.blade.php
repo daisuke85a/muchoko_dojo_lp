@@ -232,11 +232,13 @@
             top: 2604px;
             width: 479px;
             height: 127px;
+            display: flex;
+            justify-content: center;
             /* z-index: 29; */
         }
 
         .apply .apply-button a {
-            background-image: url("{{ asset('image/button_apply.png') }}");
+            /* background-image: url("{{ asset('image/button_apply.png') }}"); */
             font-size: 35px;
             font-family: "MS Gothic";
             color: rgb(255, 255, 255);
@@ -245,7 +247,10 @@
             -moz-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             -webkit-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             -ms-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
-            position: absolute;
+            display: block;
+            align-self: center;
+            text-decoration: none;
+            /* position: absolute; */
             /* left: 640.141px; */
             /* top: 2654.335px; */
             z-index: 99;
