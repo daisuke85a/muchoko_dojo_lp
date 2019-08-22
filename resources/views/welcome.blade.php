@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>むちょこ道場</title>
+    <meta name="description"
+        content="むちょこ道場では、フリーランスになるためのお手伝いをしております。見積もりの提出体験などもできます。基礎力・チーム開発力・実務力をテーマとした３つの課題を通して、フリーランスのエンジニアとして、必要なスキルを体感していただくワークショップになります。">
+
     <style>
         .top {
             background-image: url("{{ asset('image/first_view.png') }}");
@@ -22,6 +25,24 @@
         .task {
             display: flex;
             justify-content: space-evenly;
+        }
+
+        .goal {
+            background-image: url("{{ asset('image/goal.png') }}");
+            width: 1000px;
+            height: 745px;
+        }
+
+        .apply {
+            background-image: url("{{ asset('image/apply.png') }}");
+            width: 1000px;
+            height: 1137px;
+        }
+
+        footer {
+            background-image: url("{{ asset('image/footer.png') }}");
+            width: 1000px;
+            height: 147px;
         }
 
     </style>
@@ -53,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div class="Goal">
+    <div class="goal">
         <h2>目標</h2>
         <div>
             <div>\</div>
@@ -61,7 +82,7 @@
             <div>/</div>
         </div>
     </div>
-    <div class="Apply">
+    <div class="apply">
         <h2>お申し込み</h2>
         <div>
             <p>費用は、<span>50,000円</span>です。</p>
@@ -70,13 +91,11 @@
                 <a href="/apply"><img src="" alt="">お申込み</a>
             </div>
         </div>
-    </div>
-    <div class="Contact">
         <div>
             <a href="">お問い合わせ<img src="" alt=""></a>
         </div>
-    </div>
 
+    </div>
     <footer>©2019 むちょこ道場</footer>
 </body>
 
