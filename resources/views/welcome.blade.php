@@ -155,6 +155,35 @@
             height: 745px;
         }
 
+        .goal h2 {
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(192, 237, 245);
+            line-height: 1.2;
+            text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+            -moz-transform: matrix(3.53861246170494, 9.85655391869268e-16, 0, 3.79567598144718, 0, 0);
+            -webkit-transform: matrix(3.53861246170494, 9.85655391869268e-16, 0, 3.79567598144718, 0, 0);
+            -ms-transform: matrix(3.53861246170494, 9.85655391869268e-16, 0, 3.79567598144718, 0, 0);
+            position: absolute;
+            left: 464.71px;
+            top: 1605.541px;
+            z-index: 41;
+        }
+
+        .goal p {
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(0, 0, 0);
+            line-height: 1.2;
+            -moz-transform: matrix(1.15621606347031, 3.2205578018461e-16, 0, 1.24020971184936, 0, 0);
+            -webkit-transform: matrix(1.15621606347031, 3.2205578018461e-16, 0, 1.24020971184936, 0, 0);
+            -ms-transform: matrix(1.15621606347031, 3.2205578018461e-16, 0, 1.24020971184936, 0, 0);
+            position: absolute;
+            left: 169.417px;
+            top: 1844.959px;
+            z-index: 40;
+        }
+
         .apply {
             background-image: url("{{ asset('image/apply.png') }}");
             width: 1000px;
@@ -199,9 +228,7 @@
     <div class="goal">
         <h2>目標</h2>
         <div>
-            <div>\</div>
-            <div>フリーランスとして駆け出すために必要な<br />武器を揃えること！</div>
-            <div>/</div>
+            <p>フリーランスとして駆け出すために必要な<br />武器を揃えること！</p>
         </div>
     </div>
     <div class="apply">
