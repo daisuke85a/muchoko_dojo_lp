@@ -69,7 +69,7 @@
             font-size: 35px;
             font-family: "MS Gothic";
             color: rgb(0, 0, 0);
-            line-height: 1.2;
+            line-height: 1.55;
             position: absolute;
             left: 133px;
             top: 665.805px;
