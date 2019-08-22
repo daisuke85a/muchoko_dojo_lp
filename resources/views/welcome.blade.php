@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .top {
+            background-image: url("{{ asset('image/first_view.png') }}");
+            width: 1000px;
+            height: 500px;
+        }
+
+        .about {
+            background-image: url("{{ asset('image/about.png') }}");
+            width: 1000px;
+            height: 860px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+    </style>
 </head>
 
 <body>
-    <img src="{{ asset('image/firstView.png') }}" alt="">
+    {{-- <img src="{{ asset('image/firstView.png') }}" alt=""> --}}
     <div class="top">
         <p>\\フリーランスになるためのお手伝い企画//</p>
         <h1>むちょこ道場</h1>
@@ -19,17 +38,17 @@
         <p>むちょこ道場では、フリーランスになるための<br />お手伝いをしております。</p>
         <p>見積もりの提出体験などもできます。</p>
         <p>基礎力・チーム開発力・実務力をテーマとし<br />た３つの課題を通して、フリーランスのエン<br />ジニアとして、必要なスキルを体感していた<br />だくワークショップになります。</p>
-        <div>
+        <div class="task">
             <div>
-                <img src="" alt="基礎力">
+                <img src="{{ asset('image/about_basic.png') }}" alt="基礎力">
                 <p>基礎力</p>
             </div>
             <div>
-                <img src="" alt="チーム開発力">
+                <img src="{{ asset('image/about_team.png') }}" alt="チーム開発力">
                 <p>チーム開発力</p>
             </div>
             <div>
-                <img src="" alt="実務力">
+                <img src="{{ asset('image/about_practical.png') }}" alt="実務力">
                 <p>実務力</p>
             </div>
         </div>
