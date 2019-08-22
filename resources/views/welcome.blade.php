@@ -8,7 +8,7 @@
     <title>むちょこ道場</title>
     <meta name="description"
         content="むちょこ道場では、フリーランスになるためのお手伝いをしております。見積もりの提出体験などもできます。基礎力・チーム開発力・実務力をテーマとした３つの課題を通して、フリーランスのエンジニアとして、必要なスキルを体感していただくワークショップになります。">
-
+    <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <style>
         .top {
             background-image: url("{{ asset('image/first_view.png') }}");
