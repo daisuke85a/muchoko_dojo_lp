@@ -118,6 +118,15 @@
             z-index: 49;
         }
 
+        .task div:nth-child(2) img {
+            position: absolute;
+            left: 367px;
+            top: 1087px;
+            width: 289px;
+            height: 188px;
+            z-index: 50;
+        }
+
         .task div:nth-child(3) p {
             font-size: 50px;
             font-family: "MS Gothic";
@@ -129,6 +138,15 @@
             left: 742.75px;
             top: 1284.45px;
             z-index: 47;
+        }
+
+        .task div:nth-child(3) img {
+            position: absolute;
+            left: 683px;
+            top: 1087px;
+            width: 276px;
+            height: 195px;
+            z-index: 48;
         }
 
         .goal {
