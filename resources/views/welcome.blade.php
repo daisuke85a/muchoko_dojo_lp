@@ -235,7 +235,7 @@
             /* z-index: 29; */
         }
 
-        .apply .apply-butoon a {
+        .apply .apply-button a {
             background-image: url("{{ asset('image/button_apply.png') }}");
             font-size: 35px;
             font-family: "MS Gothic";
@@ -246,22 +246,10 @@
             -webkit-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             -ms-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             position: absolute;
-            left: 640.141px;
-            top: 2654.335px;
+            /* left: 640.141px; */
+            /* top: 2654.335px; */
             z-index: 99;
         }
-
-        .apply a:nth-child(2) {
-            border-radius: 35px;
-            /* background-color: rgb(103, 212, 231); */
-            position: absolute;
-            left: 461px;
-            top: 2704px;
-            width: 489px;
-            height: 139px;
-            /* z-index: 29; */
-        }
-
 
         footer {
             background-image: url("{{ asset('image/footer.png') }}");
