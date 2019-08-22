@@ -222,6 +222,17 @@
             font-size: 70px;
         }
 
+        .apply a {
+            border-radius: 35px;
+            /* background-color: rgb(103, 212, 231); */
+            position: absolute;
+            left: 461px;
+            top: 2604px;
+            width: 489px;
+            height: 139px;
+            /* z-index: 29; */
+        }
+
         footer {
             background-image: url("{{ asset('image/footer.png') }}");
             width: 1000px;
@@ -265,13 +276,11 @@
     </div>
     <div class="apply">
         <h2>お申し込み</h2>
-        <div>
-            <p>費用は、<span>50,000円</span>です。<br />
-                お申し込みの方は、こちらから<br />決済にお進みください</p>
-            <div>
-                <a href="/apply"><img src="" alt="">お申込み</a>
-            </div>
-        </div>
+        <p>費用は、<span>50,000円</span>です。<br />
+            お申し込みの方は、こちらから<br />決済にお進みください</p>
+        <a href="/apply"><img src="{{ asset('image/button_apply.png') }}" alt="">お申込み</a>
+
+
         <div>
             <a href="">お問い合わせ<img src="" alt=""></a>
         </div>
