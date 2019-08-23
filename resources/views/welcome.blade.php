@@ -9,7 +9,7 @@
     <meta name="description"
         content="むちょこ道場では、フリーランスになるためのお手伝いをしております。見積もりの提出体験などもできます。基礎力・チーム開発力・実務力をテーマとした３つの課題を通して、フリーランスのエンジニアとして、必要なスキルを体感していただくワークショップになります。">
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
     <style>
         .top {
@@ -300,6 +300,22 @@
             z-index: 7;
         }
 
+        .pagetop {
+            display: none;
+            position: fixed;
+            bottom: 150px;
+            left: 914px;
+            /* right: 15px; */
+            z-index: 100;
+        }
+
+        .pagetop a {
+            display: block;
+            background-image: url("{{ asset('image/scroll_button.png') }}");
+            width: 87px;
+            height: 63px;
+        }
+
     </style>
 </head>
 
@@ -353,6 +369,28 @@
     <footer>
         <p>©2019 むちょこ道場</p>
     </footer>
+
+    <p class="pagetop"><a href="#wrap"></a></p>
+
+    <script>
+        $(document).ready(function () {
+            var pagetop = $('.pagetop');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+
+    </script>
 </body>
 
 {{-- //TODO: 上部へのページスクロールの追加 --}}
