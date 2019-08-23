@@ -27,14 +27,23 @@ class ContactController extends Controller
         // TODO::バリデーションする。必須表示する。
 
         // 問い合わせした人にメールする
-        $data = ['contact' =>  $request->contact];
+        $data = [   'name' =>  $request->name,
+                    'contact' =>  $request->contact,
+                    'email' =>  $request->email,
+                ];
+
         Mail::send('emails.contact.customer', $data, function($message) use ($request){
     	    $message->to($request->email, $request->name)
                         ->subject('むちょこ道場へのお問い合わせありがとうございます');
     	});
 
 
-        // TODO::むちょこ道場の管理者にメールする
+        // むちょこ道場の管理者にメールする
+        Mail::send('emails.contact.admin', $data, function($message) use ($request){
+    	    $message->to(env('MAIL_FROM_ADDRESS', 'hello@example.com'), env('MAIL_FROM_NAME', 'Example'))
+                        ->subject('むちょこ道場へお問い合わせがありました');
+    	});
+
 
         // TODO::例外処理
         return redirect('/contact_success');
