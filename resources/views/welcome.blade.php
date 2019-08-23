@@ -224,9 +224,7 @@
 
         .apply-button {
             background-image: url("{{ asset('image/button_apply.png') }}");
-            /* border-radius: 35px; */
             background-size: auto auto;
-            /* background-color: rgb(103, 212, 231); */
             position: absolute;
             left: 461px;
             top: 2604px;
@@ -251,6 +249,19 @@
             -moz-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             -webkit-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
             -ms-transform: matrix(1.68627859551162, 0, 0, 1.68627859551163, 0, 0);
+        }
+
+        .contact-button {
+            position: absolute;
+            left: 273px;
+            top: 2987px;
+            width: 492px;
+            height: 131px;
+            z-index: 20;
+
+            background-image: url("{{ asset('image/button_contact.png') }}");
+            background-size: auto auto;
+
         }
 
         footer {
@@ -303,7 +314,9 @@
             <p>お申込み</p>
         </a>
 
-        {{-- <a href="">お問い合わせ<img src="" alt=""></a> --}}
+        <a class="contact-button" href="/contact">
+            <p>お問い合わせ</p>
+        </a>
     </div>
 
     </div>
