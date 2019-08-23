@@ -340,7 +340,7 @@
         <p class="apply-description">費用は、<span>50,000円</span>です。<br />
             お申し込みの方は、こちらから<br />決済にお進みください</p>
 
-        <a class="apply-button" href="/apply">
+        <a class="apply-button" href="/credit">
             <p>お申込み</p>
         </a>
 
