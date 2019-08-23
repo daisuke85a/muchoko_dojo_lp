@@ -50,11 +50,21 @@
             <div class="form-group">
                 <label for="name">お名前</label>
                 <input type="text" class="form-control" name="name" id="name" placeholder="例：むちょこ">
+                @if ($errors->has('name'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('name') }}</strong>
+                </span>
+                @endif
             </div>
 
             <div class="form-group">
                 <label for="email">Eメールアドレス</label>
                 <input type="email" class="form-control" name="email" id="email" placeholder="例：muchoko@example.com">
+                @if ($errors->has('email'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+                @endif
             </div>
             <label for="card-element">
                 クレジットカード番号

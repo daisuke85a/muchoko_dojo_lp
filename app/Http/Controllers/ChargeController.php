@@ -22,13 +22,17 @@ class ChargeController extends Controller
      */
     public function create(Request $request)
     {
-        //TODO: バリデーションを行う
+        // バリデーションする。
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+        ]);
 
         \Stripe\Stripe::setApiKey('sk_test_Odr1M8wgSlxOhJ3syVhIl8Vn00VcuUOfvu');
 
         $token = $request->stripeToken;
 
-        try{
+        try {
             $customer = \Stripe\Customer::create([
                 "description" => "むちょこ道場",
                 "source" => $token,
@@ -36,15 +40,13 @@ class ChargeController extends Controller
                 'name' => $request->name,
             ]);
 
-
             $charge = \Stripe\Charge::create([
                 'customer' => $customer->id,
                 'amount' => 50000,
                 'currency' => 'jpy',
                 'description' => 'むちょこ道場',
             ]);
-        }
-        catch(\Exception $e){
+        } catch (\Exception $e) {
             return redirect('/credit_failed');
         }
 

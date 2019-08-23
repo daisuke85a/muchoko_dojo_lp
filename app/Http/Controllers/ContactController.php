@@ -23,7 +23,7 @@ class ContactController extends Controller
     public function send(Request $request)
     {
 
-        // TODO::バリデーションする。必須表示する。
+        // バリデーションする。
         $validatedData = $request->validate([
             'name' => 'required',
             'contact' => 'required',
