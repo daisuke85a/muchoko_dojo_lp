@@ -40,3 +40,7 @@ Route::get('/contact', function () {
 });
 
 Route::post('/contact', 'ContactController@send');
+
+Route::get('/contact_success', function () {
+    return view('contact_success');
+});
