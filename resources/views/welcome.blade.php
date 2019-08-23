@@ -368,6 +368,8 @@
     </div>
     <footer>
         <p>©2019 むちょこ道場</p>
+        <a href="/tokutei">特定商取引法の表示</a>
+        <a href="/privacy">プライバシーポリシー</a>
     </footer>
 
     <p class="pagetop"><a href="#wrap"></a></p>
