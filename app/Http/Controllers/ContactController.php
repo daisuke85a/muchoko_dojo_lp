@@ -24,6 +24,11 @@ class ContactController extends Controller
     {
 
         // TODO::バリデーションする。必須表示する。
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'contact' => 'required',
+            'email' => 'required|email',
+        ]);
 
         // メールを送る準備
         $data = ['name' => $request->name,
