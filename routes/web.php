@@ -38,3 +38,5 @@ Route::get('/credit_success', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::post('/contact', 'ContactController@send');

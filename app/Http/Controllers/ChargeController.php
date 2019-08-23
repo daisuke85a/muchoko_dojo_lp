@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Cookie;
 use Illuminate\Http\Request;
 
 class ChargeController extends Controller
@@ -17,8 +16,7 @@ class ChargeController extends Controller
     }
 
     /**
-     * サブスクリプションの課金を開始する
-     * Cookieの値から判断する
+     * 課金する
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function create(Request $request)
@@ -29,6 +27,7 @@ class ChargeController extends Controller
         $token = $request->stripeToken;
 
         //TODO: 例外処理
+        //TODO: 同じユーザーの課金を許すかどうか？
         $customer = \Stripe\Customer::create([
             "description" => "むちょこ道場",
             "source" => $token,

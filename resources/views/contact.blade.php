@@ -11,6 +11,7 @@
 
 <body>
     <form action="/contact" method="post">
+        {{ csrf_field() }}
         <div class="container py-4">
             <div class="form-group">
                 <label for="name">お名前</label>
