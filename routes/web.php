@@ -34,3 +34,7 @@ Route::get('/credit', 'ChargeController@inputCredit');
 Route::get('/credit_success', function () {
     return view('credit_success');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
