@@ -296,8 +296,20 @@
             -ms-transform: matrix(1.25424750415349, 0, 0, 1.25424750415348, 0, 0);
             position: absolute;
             left: 348.912px;
-            top: 3324.643px;
+            top: 3315.643px;
             z-index: 7;
+        }
+
+        footer .tokutei-privacy{
+            position: absolute;
+            left: 348.912px;
+            top: 3365.643px;
+            z-index: 7;
+        }
+
+        footer .tokutei-privacy a{
+            text-decoration: none;
+            color: white;
         }
 
         .pagetop {
@@ -368,6 +380,10 @@
     </div>
     <footer>
         <p>©2019 むちょこ道場</p>
+        <div class="tokutei-privacy">
+            <a href="/tokutei">特定商取引法の表示</a>
+            <a href="/privacy">プライバシーポリシー</a>
+        </div>
     </footer>
 
     <p class="pagetop"><a href="#wrap"></a></p>

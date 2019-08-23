@@ -1,3 +1,39 @@
+# 概要
+むちょこ道場の最終課題「実務力課題」のソースコード
+
+## 狙い
+* お客様からご要望を正しく聞き出す「ヒアリング能力」
+* 納期や見積りを無理のない範囲におさめる「交渉力」
+* 契約内容を確実に遂行する「自己管理能力」
+
+## 流れ
+* ヒアリング
+* 見積もり提出
+* 実装・納品
+
+## 課題詳細
+* 動画  
+https://youtu.be/v_LSMapfK8I
+
+* スライド  
+https://docs.google.com/presentation/d/1jNrjGH8SniId4saqIDx8avGasEvjON1RzBLi41pf_PM/edit#slide=id.p
+
+## 制作内容
+* サイト制作
+    * トップページ
+    * 課金ページ
+    * 課金完了ページ
+    * お問い合わせページ
+    * お問い合わせ完了ページ
+    * プライバシーポリシー
+    * 特定商取引法に基づく表示
+	
+* システム構築	
+    * 課金システム
+    * お問い合わせシステム
+
+# Laravel
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

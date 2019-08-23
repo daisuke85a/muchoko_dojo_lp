@@ -44,6 +44,15 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/tokutei', function () {
+    return view('tokutei');
+});
+
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
+
 Route::post('/contact', 'ContactController@send');
 
 Route::get('/contact_success', function () {
