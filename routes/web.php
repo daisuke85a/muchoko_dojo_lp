@@ -35,6 +35,11 @@ Route::get('/credit_success', function () {
     return view('credit_success');
 });
 
+Route::get('/credit_failed', function () {
+    return view('credit_failed');
+});
+
+
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -44,3 +49,4 @@ Route::post('/contact', 'ContactController@send');
 Route::get('/contact_success', function () {
     return view('contact_success');
 });
+

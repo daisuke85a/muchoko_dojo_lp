@@ -26,25 +26,28 @@ class ChargeController extends Controller
 
         $token = $request->stripeToken;
 
-        //TODO: 例外処理
-        //TODO: 同じユーザーの課金を許すかどうか？
-        $customer = \Stripe\Customer::create([
-            "description" => "むちょこ道場",
-            "source" => $token,
-            'email' => $request->email,
-            'name' => $request->name,
-        ]);
+        try{
+            $customer = \Stripe\Customer::create([
+                "description" => "むちょこ道場",
+                "source" => $token + 1,
+                'email' => $request->email,
+                'name' => $request->name,
+            ]);
 
-        //TODO: 例外処理
-        $charge = \Stripe\Charge::create([
-            'customer' => $customer->id,
-            'amount' => 50000,
-            'currency' => 'jpy',
-            'description' => 'むちょこ道場',
-        ]);
 
-        //TODO: 成功したら決済成功画面を表示する
-        //TODO: 失敗したら決済失敗画面を表示する
+            $charge = \Stripe\Charge::create([
+                'customer' => $customer->id,
+                'amount' => 50000,
+                'currency' => 'jpy',
+                'description' => 'むちょこ道場',
+            ]);
+        }
+        catch(\Exception $e){
+            return redirect('/credit_failed');
+        }
+
+        // TODO: お客様と管理者にメールで決済成功を通知する
+
 
         return redirect('/credit_success');
     }
