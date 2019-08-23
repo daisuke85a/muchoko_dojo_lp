@@ -30,3 +30,7 @@ Route::get('/canceled', function () {
 });
 
 Route::get('/credit', 'ChargeController@inputCredit');
+
+Route::get('/credit_success', function () {
+    return view('credit_success');
+});
