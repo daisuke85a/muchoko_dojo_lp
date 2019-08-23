@@ -253,8 +253,8 @@
 
         .contact-button {
             position: absolute;
-            left: 273px;
-            top: 2987px;
+            left: 259px;
+            top: 2973px;
             width: 492px;
             height: 131px;
             z-index: 20;
@@ -284,6 +284,20 @@
             background-image: url("{{ asset('image/footer.png') }}");
             width: 1000px;
             height: 147px;
+        }
+
+        footer p {
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            -moz-transform: matrix(1.25424750415349, 0, 0, 1.25424750415348, 0, 0);
+            -webkit-transform: matrix(1.25424750415349, 0, 0, 1.25424750415348, 0, 0);
+            -ms-transform: matrix(1.25424750415349, 0, 0, 1.25424750415348, 0, 0);
+            position: absolute;
+            left: 348.912px;
+            top: 3324.643px;
+            z-index: 7;
         }
 
     </style>
@@ -336,7 +350,9 @@
     </div>
 
     </div>
-    <footer>©2019 むちょこ道場</footer>
+    <footer>
+        <p>©2019 むちょこ道場</p>
+    </footer>
 </body>
 
 </html>
