@@ -262,6 +262,22 @@
             background-image: url("{{ asset('image/button_contact.png') }}");
             background-size: auto auto;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+
+        }
+
+        .contact-button p {
+            font-size: 35px;
+            font-family: "MS Gothic";
+            color: rgb(103, 212, 231);
+            line-height: 1.2;
+            text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+            -moz-transform: matrix(1.73409799421544, 0, 0, 1.73409799421545, 0, 0);
+            -webkit-transform: matrix(1.73409799421544, 0, 0, 1.73409799421545, 0, 0);
+            -ms-transform: matrix(1.73409799421544, 0, 0, 1.73409799421545, 0, 0);
         }
 
         footer {
