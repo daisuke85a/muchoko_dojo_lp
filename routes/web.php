@@ -48,6 +48,10 @@ Route::get('/tokutei', function () {
     return view('tokutei');
 });
 
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
 
 Route::post('/contact', 'ContactController@send');
 
