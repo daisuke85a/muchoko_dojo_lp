@@ -24,8 +24,8 @@
             </div>
 
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">お問い合わせ内容</label>
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+                <label for="contact">お問い合わせ内容</label>
+                <textarea class="form-control" id="contact" name="contact" rows="10"></textarea>
             </div>
 
             <button class="btn btn-primary">お問い合わせ</button>

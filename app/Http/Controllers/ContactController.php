@@ -26,8 +26,8 @@ class ContactController extends Controller
 
         // TODO::バリデーションする。必須表示する。
 
-        // TODO::問い合わせした人にメールする
-        $data = [];
+        // 問い合わせした人にメールする
+        $data = ['contact' =>  $request->contact];
         Mail::send('emails.contact.customer', $data, function($message) use ($request){
     	    $message->to($request->email, $request->name)
                         ->subject('むちょこ道場へのお問い合わせありがとうございます');
